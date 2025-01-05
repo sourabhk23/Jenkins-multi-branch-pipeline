@@ -6,14 +6,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Your build commands go here
+
                 echo 'Building the application...'
             }
         }
 
         stage('Test') {
             steps {
-                // Test the application
+
                 echo 'Running tests...'
             }
         }
@@ -26,9 +26,9 @@ pipeline {
                 script {
                     DEPLOY_ENV = 'qa'
                 }
-                // Deployment to QA server
                 echo 'Deploying to QA environment...'
-                // Add your deploy command here, e.g., SSH or any deployment script
+
+
             }
         }
 
@@ -40,9 +40,9 @@ pipeline {
                 script {
                     DEPLOY_ENV = 'uat'
                 }
-                // Deployment to UAT server
+
                 echo 'Deploying to UAT environment...'
-                // Add your deploy command here
+
             }
         }
 
@@ -54,9 +54,9 @@ pipeline {
                 script {
                     DEPLOY_ENV = 'production'
                 }
-                // Deployment to Production server
+
                 echo 'Deploying to Production environment...'
-                // Add your deploy command here
+
             }
         }
     }
