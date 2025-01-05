@@ -1,1 +1,3 @@
-sourabh
+s="sourabh"
+if i in s :
+  print(i)
