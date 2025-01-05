@@ -1,1 +1,1 @@
-echo "file has been pushed"
+echo "file has been removed"
